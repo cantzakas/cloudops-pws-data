@@ -13,5 +13,4 @@ SELECT log_header[1]::bigint AS log_master_id
 FROM (
 SELECT regexp_split_to_array(regexp_replace(replace(split_part(rawrecord, '  ', 1), '>', ' '), '["<[\]]', '', 'g'), E'\\s+') AS log_header, split_part(rawrecord, '  ', 2) AS log_details
 FROM public.pws_ccng
---LIMIT 2000
 ) A
