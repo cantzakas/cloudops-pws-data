@@ -1,5 +1,4 @@
 DROP TYPE pws.elb_log_record CASCADE;
-
 CREATE TYPE pws.elb_log_record AS 
 (
 	LogId uuid,
