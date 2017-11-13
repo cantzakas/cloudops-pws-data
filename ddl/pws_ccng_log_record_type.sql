@@ -1,6 +1,6 @@
-DROP TYPE pws.cccng_syslog_record CASCADE ;
+DROP TYPE pws.ccng_syslog_record CASCADE ;
 
-CREATE TYPE pws.cccng_syslog_record AS 
+CREATE TYPE pws.ccng_syslog_record AS 
 (
 	logId uuid,
 	syslogPriority int,
