@@ -19,5 +19,6 @@ AS SELECT logId,
 	logMessageCatchAll
 FROM (
 	SELECT (pws.plpy_parse_uaa(rawrecord)).* 
-	FROM pws.pws_uaa) A
+	FROM pws.pws_uaa
+	LIMIT 250000) A
 DISTRIBUTED BY (logId) ;
