@@ -1,0 +1,38 @@
+DROP TYPE IF EXISTS pws.ccng_cef_syslog_record CASCADE ;
+
+CREATE TYPE pws.ccng_cef_syslog_record AS 
+(
+	logId uuid,
+	syslogPriority int,
+	syslogEventTime timestamptz,
+	syslogHostIp inet,
+	syslogComponentString text,
+	syslogJobString text,
+	syslogIndexString text,
+	extmsgCef text, 
+	extmsgCloudFoundry text,
+	extmsgCFController text,
+	extmsgValue1 text,
+	extmsgGet1 text, 
+	extmsgGet2 text,
+	extmsgValue2 text,
+	extmsgRT text,
+	extmsgSUser text,
+	extmsgSUID text,
+	extmsgRequest text,
+	extmsgRequestMethod text,
+	extmsgSource text,
+	extmsgDestination text,
+	extmsgCS1Label text,
+	extmsgCS1 text,
+	extmsgCS2Label text,
+	extmsgCS2 text,
+	extmsgCS3Label text,
+	extmsgCS3 text,
+	extmsgCS4Label text,
+	extmsgCS4 text,
+	extmsgCS5Label text,
+	extmsgCS51 text,
+	extmsgCS52 text,
+	extmsgCS53 text
+);
