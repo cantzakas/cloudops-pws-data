@@ -4,4 +4,4 @@ AS $$
 	import uuid
 	return str(uuid.uuid1())
 $$
-LANGUAGE plpythonu IMMUTABLE;
+LANGUAGE plpythonu VOLATILE;
